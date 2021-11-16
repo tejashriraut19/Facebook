@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testPacage.LoginPageVerification">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="toVerifyFriendsLink"/>
+          <include name="closedBrowser"/>
+          <include name="loginToApplication"/>
+          <include name="clearPomObjects"/>
+          <include name="logOut"/>
+          <include name="toVerifyNotificationLink"/>
+          <include name="createPOM"/>
+        </methods>
+      </class> <!-- testPacage.LoginPageVerification -->
+    </classes>
+  </test> <!-- Test chrome(failed) -->
+  <test thread-count="5" name="Test firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testPacage.LoginPageVerification">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="toVerifyFriendsLink"/>
+          <include name="closedBrowser"/>
+          <include name="loginToApplication"/>
+          <include name="clearPomObjects"/>
+          <include name="logOut"/>
+          <include name="toVerifyNotificationLink"/>
+          <include name="createPOM"/>
+        </methods>
+      </class> <!-- testPacage.LoginPageVerification -->
+    </classes>
+  </test> <!-- Test firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
